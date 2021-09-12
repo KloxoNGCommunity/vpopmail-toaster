@@ -276,7 +276,7 @@ fi
 #-------------------------------------------------------------------------------
 %changelog
 #-------------------------------------------------------------------------------
-* Tue Dec 16 2019 John Pierce <john@luckytanuki.com> 5.4.33-1.4.6.kng
+* Mon Dec 16 2019 John Pierce <john@luckytanuki.com> 5.4.33-1.4.6.kng
 - Add check for vpopmail user before deleting the user
 * Tue Dec 10 2019 John Pierce <john@luckytanuki.com> 5.4.33-1.4.5.kng
 * Sat Dec 20 2014 Mustafa Ramadhan <mustafa@bigraf.com> 5.4.33-1.4.4.mr
@@ -292,7 +292,7 @@ fi
 * Sat Jan 12 2013 Mustafa Ramadhan <mustafa@bigraf.com> 5.4.33-1.4.1.mr
 - add build_cnt_60 and build_cnt_6064
 
-* Fri Jan 1 2013 Mustafa Ramadhan <mustafa.ramadhan@lxcenter.org> 5.4.33-1.4.1
+* Tue Jan 1 2013 Mustafa Ramadhan <mustafa.ramadhan@lxcenter.org> 5.4.33-1.4.1
 - Change --disable-many-domains to --enable-many-domains
 * Wed Aug  1 2012 Eric Shubert <eric@datamatters.us> 5.4.33-1.4.0
 - Bumped version to 1.4.0
@@ -376,7 +376,7 @@ fi
 - Clean-ups
 * Mon Mar 31 2003 Miguel Beccari <miguel.beccari@clikka.com> 5.3.8-1.0.5
 - Conectiva Linux 7.0 support
-* Sun Feb 15 2003 Nick Hemmesch <nick@ndhsoft.com> 5.3.8-1.0.4
+* Sat Feb 15 2003 Nick Hemmesch <nick@ndhsoft.com> 5.3.8-1.0.4
 - Support for Red Hat 8.0
 * Wed Feb 05 2003 Miguel Beccari <miguel.beccari@clikka.com> 5.3.8-1.0.3
 - Support for Red Hat 8.0 thanks to Andrew.J.Kay
@@ -409,16 +409,16 @@ fi
 - New version: 0.7 toaster.
 - Better macros to detect Mandrake Release
 - Minor clean-ups.
-* Thu Aug 13 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.6.5.3.8-1
+* Tue Aug 13 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.6.5.3.8-1
 - New version: 0.6 toaster.
 * Mon Aug 12 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.5.5.3.8-1
 - Doc package is standalone (someone does not ask for man pages)
 - Checks for gcc-3.2 (default compiler from now)
 - New version: 0.5 toaster.
-* Tue Aug 08 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.4.5.3.8-1
+* Thu Aug 08 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.4.5.3.8-1
 * Rebuild agains 0.4 toaster
 - new version 5.3.8
-* Thu Aug 06 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.5.3.5-4
+* Tue Aug 06 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.5.3.5-4
 - Deleted userdel and groupdel in uninstallation (safe): if the user
   wants to delete he has to do it manually (more safe)
 * Wed Jul 31 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.5.3.5-3
