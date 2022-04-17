@@ -5,7 +5,7 @@
 
 %define		release %{bversion}.%{rpmrelease}
 BuildRequires:	automake, autoconf, mysql-devel >= 5.0.22, mysql >= 5.0.22 
-Requires:	mysql >= 5.0.22 
+Requires:	/usr/bin/mysql 
 #BuildPreReq:	shadow-utils
 BuildRequires:	shadow-utils
 %define		ccflags %{optflags}
