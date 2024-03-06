@@ -8,6 +8,8 @@ BuildRequires:	automake, autoconf, mysql-devel >= 5.0.22, mysql >= 5.0.22
 Requires:	/usr/bin/mysql 
 #BuildPreReq:	shadow-utils
 BuildRequires:	shadow-utils
+BuildRequires:	perl
+
 %define		ccflags %{optflags}
 %define		ldflags %{optflags}
 %define		mylibdir /usr/lib64/mysql
