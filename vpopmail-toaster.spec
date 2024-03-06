@@ -37,7 +37,7 @@ Packager:       Eric Shubert <eric@datamatters.us>
 
 %define	name vpopmail
 %define	vdir /home/vpopmail
-#%define	tempdir = "0"
+#%%define	tempdir = "0"
 
 
 #-------------------------------------------------------------------------------
@@ -143,7 +143,7 @@ mkdir -p %{buildroot}
 # Run configure to create makefile
 #-------------------------------------------------------------------------------
 autoreconf
-%{__automake}
+#%%{__automake}
 %{__autoconf}
  ./configure --prefix=%{vdir} \
 	--enable-vpopuser=vpopmail \
@@ -254,7 +254,7 @@ fi
 
 %attr(0751,vpopmail,vchkpw) %{vdir}/bin/*
 %attr(0644,vpopmail,vchkpw) %{vdir}/domains/.quotawarn.msg
-#%attr(0644,vpopmail,vchkpw) %{vdir}/domains/.overquota.msg
+#%%attr(0644,vpopmail,vchkpw) %{vdir}/domains/.overquota.msg
 %attr(0644,vpopmail,vchkpw) %{vdir}/etc/inc_deps
 %attr(0644,vpopmail,vchkpw) %{vdir}/etc/lib_deps
 %attr(0644,vpopmail,vchkpw) %{vdir}/etc/vusagec.conf
