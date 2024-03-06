@@ -34,6 +34,8 @@ Source0:	vpopmail-%{pversion}.tar.gz
 Patch0:		vpopmail-toaster-5.4.33.patch.bz2
 Patch1:    vpopmail-build-no-root-5.4.33.patch
 Patch2:    vpopmail-build-no-qmail-5.4.33.patch
+Patch3:		vpopmail-build-devel-5.4.33.patch
+Patch4:		vpopmail-5.4.33_gcc-10-compat.patch
 BuildRoot:	%{_tmppath}/%{name}-%{pversion}-root
 Obsoletes:	vpopmail-toaster-doc
 Conflicts:      set-toaster, checkpassword, vpopmail, postfix
@@ -101,6 +103,8 @@ one domain per SQL table     = --disable-many-domains
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
+%patch4 -p1
 
 # Cleanup for gcc
 #-------------------------------------------------------------------------------
