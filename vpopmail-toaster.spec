@@ -146,9 +146,9 @@ mkdir -p %{buildroot}
 
 # Run configure to create makefile
 #-------------------------------------------------------------------------------
-autoreconf
+autoreconf -f -i
 #%%{__automake}
-%{__autoconf}
+#%%{__autoconf}
  ./configure --prefix=%{vdir} \
 	--enable-vpopuser=vpopmail \
 	--enable-vpopgroup=vchkpw \
