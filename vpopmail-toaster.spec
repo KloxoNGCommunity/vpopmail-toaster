@@ -1,10 +1,10 @@
 %define	name vpopmail
 %define	pversion 5.4.33
 %define 	bversion 1.4
-%define	rpmrelease 6.kng%{?dist}
+%define	rpmrelease 7.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
-BuildRequires:	automake, autoconf, mysql-devel >= 5.0.22, mysql >= 5.0.22 
+BuildRequires:	automake, autoconf, MariaDB-devel >= 10.5
 Requires:	/usr/bin/mysql 
 #BuildPreReq:	shadow-utils
 BuildRequires:	shadow-utils
@@ -14,7 +14,7 @@ BuildRequires: make
 
 %define		ccflags %{optflags}
 %define		ldflags %{optflags}
-%define		mylibdir /usr/lib64/mysql
+%define		mylibdir /usr/lib64
 
 ############### RPM ################################
 
