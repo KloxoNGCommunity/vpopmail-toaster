@@ -1,10 +1,10 @@
 %define	name vpopmail
 %define	pversion 5.4.33
 %define 	bversion 1.4
-%define	rpmrelease 8.kng%{?dist}
+%define	rpmrelease 9.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
-BuildRequires:	automake, autoconf, MariaDB-devel >= 10.5, zlib-devel
+BuildRequires:	automake, autoconf, mariadb-devel, zlib-devel
 Requires:	/usr/bin/mysql 
 #BuildPreReq:	shadow-utils
 BuildRequires:	shadow-utils
