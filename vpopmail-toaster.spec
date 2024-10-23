@@ -1,10 +1,19 @@
 %define	name vpopmail
 %define	pversion 5.4.33
 %define 	bversion 1.4
-%define	rpmrelease 9.kng%{?dist}
+%define	rpmrelease 10.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
-BuildRequires:	automake, autoconf, mariadb-devel, zlib-devel
+BuildRequires:	automake, autoconf, zlib-devel
+
+%if %{?rhel}0 < 80
+%define		mylibdir /usr/lib64/mysql
+BuildRequires:  openssl11-devel >= 1.1.1 , mysql-devel
+%else
+%define		mylibdir /usr/lib64
+BuildRequires:  openssl-devel , mariadb-devel
+%endif
+
 Requires:	/usr/bin/mysql 
 #BuildPreReq:	shadow-utils
 BuildRequires:	shadow-utils
@@ -14,7 +23,7 @@ BuildRequires: make
 
 %define		ccflags %{optflags}
 %define		ldflags %{optflags}
-%define		mylibdir /usr/lib64
+
 
 ############### RPM ################################
 
