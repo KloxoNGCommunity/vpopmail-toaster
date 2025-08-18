@@ -1,7 +1,7 @@
 %define	name vpopmail
 %define	pversion 5.4.33
 %define 	bversion 1.4
-%define	rpmrelease 10.kng%{?dist}
+%define	rpmrelease 11.kng%{?dist}
 
 %define		release %{bversion}.%{rpmrelease}
 BuildRequires:	automake, autoconf, zlib-devel
@@ -109,11 +109,11 @@ one domain per SQL table     = --disable-many-domains
 #-------------------------------------------------------------------------------
 %setup -q -n %{name}-%{pversion}
 
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch 0 -p1
+%patch 1 -p1
+%patch 2 -p1
+%patch 3 -p1
+%patch 4 -p1
 
 # Cleanup for gcc
 #-------------------------------------------------------------------------------
